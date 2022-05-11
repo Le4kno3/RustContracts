@@ -1,0 +1,17 @@
+[workspace]
+members = [
+	"smart-contract",
+	"smart-contract-macros",
+	"examples/transfer-back",
+	"examples/token",
+	"examples/lucky-draw",
+	"examples/nft",
+	"examples/chat",
+	"examples/recursive-invocation"
+]
+
+[profile.release]
+opt-level = "z"
+panic = 'abort'
+debug = false
+lto = true
